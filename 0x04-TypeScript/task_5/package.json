@@ -1,0 +1,32 @@
+{
+  "name": "typescript_dependencies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "webpack serve --open",
+    "build": "webpack",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.1.1",
+    "@typescript-eslint/parser": "^5.1.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.50.0",
+    "fork-ts-checker-webpack-plugin": "^6.3.10",
+    "html-webpack-plugin": "^5.0.1",
+    "jest": "^27.4.7",
+    "source-map": "^0.7.3",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^9.0.4",
+    "typescript": "^4.5.5",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.8.0"
+  }
+}
