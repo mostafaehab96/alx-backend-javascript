@@ -8,7 +8,8 @@ const app = http.createServer((req, res) => {
     res.write('This is the list of our students\n');
     fs.readFile(dbName, 'utf-8', (err, fileContent) => {
       if (err) {
-        throw new Error('Cannot load the database');
+        res.write('Cannot load the database');
+        res.end();
       } else {
         const students = fileContent.trim().split('\n').slice(1);
         const studentsObjects = students.map((student) => {
