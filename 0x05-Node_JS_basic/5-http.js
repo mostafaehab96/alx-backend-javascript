@@ -5,7 +5,7 @@ const dbName = process.argv[2];
 
 const app = http.createServer((req, res) => {
   if (req.url === '/students') {
-    res.write('This is a list of our students\n');
+    res.write('This is the list of our students\n');
     fs.readFile(dbName, 'utf-8', (err, fileContent) => {
       if (err) {
         throw new Error('Cannot load the database');
@@ -30,7 +30,7 @@ const app = http.createServer((req, res) => {
           const names = fieldsList[field];
           res.write(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}\n`);
         });
-        res.end('');
+        res.end();
       }
     });
   } else {
