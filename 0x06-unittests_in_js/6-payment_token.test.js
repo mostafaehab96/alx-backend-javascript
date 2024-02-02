@@ -9,8 +9,7 @@ describe('getPaymentTokenFromAPI', () => {
     getPaymentTokenAPI(true)
       .then((data) => {
         expect(data.data).to.equal('Successful response from the API');
+        done();
       });
-
-    done();
   });
 });
